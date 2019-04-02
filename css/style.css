@@ -17,8 +17,10 @@ body{
 /* ----- header ----- */
 .header{
   background-color: #fff;
+  /* height: 70px; */
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 .header__inner{
   align-items: flex-start;
@@ -75,6 +77,9 @@ body{
 }
 
 /* ----- main ----- */
+.main{
+  padding-top: 70px;
+}
 /* --- theme--- */
 .theme{
   background-color: #f2f2f2;
@@ -114,7 +119,9 @@ body{
 .what-we-can-do__image{
   flex: 0 0 450px;
   justify-content: center;
-  height: 295px;
+}
+.what-we-can-do__image-entity{
+  vertical-align: bottom;
 }
 .what-we-can-do__text{
   flex: 0 0 650px;
@@ -169,9 +176,11 @@ body{
 }
 .latest-work__images-wrapper{
   flex: 1 1 auto;
+  height: 300px;
   margin: 0 100px 80px 0;
   max-width: 300px;
   opacity: 0.7;
+  vertical-align: bottom;
   transition: all 0.3s;
 }
 @media screen and (max-width: 1200px){
