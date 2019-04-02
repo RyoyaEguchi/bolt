@@ -9,7 +9,7 @@ body{
   max-width: 1100px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .inner{
     width: 97%;
   }
@@ -61,18 +61,18 @@ body{
 .header__hamburger-entity{
   border: 1px solid #ddd;
   border-radius: 4px;
-  color: #ddd; 
+  color: #ddd;
   padding: 10px 15px;
 }
 .header__hamburger-entity{
   font-size: 1.5em;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .header__contact-btn{
     display: none;
   }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
   .header__hamburger{
     display: none;
   }
@@ -84,7 +84,7 @@ body{
   background-color: #f2f2f2;
   padding: 250px 0;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .theme{
     padding: 160px 0 130px 0;
   }
@@ -94,7 +94,7 @@ body{
   font-size: 90px;
   font-weight: 700;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .theme__heading{
     font-size: 80px;
   }
@@ -125,7 +125,7 @@ body{
   flex: 0 0 700px;
   text-align: center;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .what-we-can-do__inner{
     flex-flow: column;
   }
@@ -164,7 +164,7 @@ body{
   flex-flow: row;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .latest-work__images{
     flex-flow: column;
   }
@@ -172,13 +172,17 @@ body{
 .latest-work__images-wrapper{
   flex: 1 1 auto;
   margin: 0 100px 80px 0;
+  max-width: 300px;
+  max-height: 300px;
   opacity: 0.7;
   transition: all 0.3s;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .latest-work__images-wrapper{
-    margin: 0;
+    margin: 0 auto;
   }
+}
+@media screen and (min-width: 1201px){
   .latest-work__images-wrapper:nth-of-type(3n){
     margin-right: 0;
   }
@@ -186,14 +190,11 @@ body{
 .latest-work__images-wrapper:hover{
   opacity: 1;
 }
-.latest-work__images-wrapper:nth-of-type(3n){
-  margin-right: 0;
-}
 /* ↓　n + 3 はnが先！ */
 .latest-work__images-wrapper:nth-of-type(n + 4){
   margin-bottom: 0;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .latest-work__images-wrapper:nth-of-type(4n){
     margin-top: 80px;
   }
@@ -204,10 +205,10 @@ body{
   justify-content: center;
   margin-top: 90px;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .latest-work__lower-part-wrapper{
     flex-flow: column;
-    margin-top: 80px; 
+    margin-top: 80px;
   }
 }
 .latest-work__text-wrpper{
@@ -215,7 +216,7 @@ body{
   margin-right: 90px;
   max-width: 70%;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .latest-work__text-wrapper{
     margin-bottom: 40px
   }
@@ -226,14 +227,14 @@ body{
 .latest-work__email-btn-wrapper{
   box-sizing: border-box;
   flex: 1 1 auto;
-  min-width: 30%;
+  max-width: 1199-width: 30%;
   padding: 14px 20px;
   text-align: center;
 }
 .latest-work__email-btn{
   /* align-self: flex-start; */
   background-color: #74cfae;
- 
+
   color: #fff;
   cursor: pointer;
   font-size: 12px;
@@ -260,7 +261,7 @@ body{
   display: flex;
   flex-flow: row;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .our-skills__images-texts{
     flex-flow: column;
   }
@@ -272,7 +273,7 @@ body{
   flex: 1 1 auto;
   margin-left: 180px;
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
   .our-skills__image-text-wrapper{
     margin: 88px 0 0 0;
   }
@@ -294,7 +295,7 @@ body{
   background-color: #f2f2f2;
   padding: 200px 0 200px 0;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .sns-nav{
     padding: 50px 0 50px 0;
   }
@@ -304,17 +305,17 @@ body{
   flex-flow: row;
   justify-content: center;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .sns-nav__icons{
     flex-flow: column;
   }
 }
-.sns-nav__icons-wrapper{ 
+.sns-nav__icons-wrapper{
   cursor: pointer;
   flex: 0 0 185px;
   transition: all 0.3s;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .sns-nav__icons-wrapper{
     flex: 1 1 100%;
   }
